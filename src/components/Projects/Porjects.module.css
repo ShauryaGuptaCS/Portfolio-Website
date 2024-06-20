@@ -1,0 +1,133 @@
+@import "../../vars.css";
+
+.projectsSection {
+  padding: 20px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 15px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.projectsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between; /* Add spacing between cards */
+}
+
+.projectBox {
+  background-color: var(--color-seconday);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: calc(50% - 10px); /* Two cards per row with gap */
+  display: flex;
+  flex-direction: column; /* Ensure children are aligned in a column */
+  justify-content: space-between; /* Distribute space evenly */
+}
+
+.projectBox:hover {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+  transform: translateY(-10px);
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Limit the height of the image */
+  object-fit: cover; /* Ensure the image maintains aspect ratio */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.projectTitle {
+  font-size: 24px; /* Clear and readable font size */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.projectDescription {
+  font-size: 16px; /* Clear and readable font size */
+  margin-bottom: 10px;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.skillItem {
+  background-color: var(--color-primary);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px; /* Clear and readable font size */
+}
+
+.projectLinkContainer {
+  text-align: right;
+  margin-top: auto; /* Push to the bottom of the flex container */
+}
+
+.projectLink {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px; /* Clear and readable font size */
+}
+
+.projectLink:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .projectsGrid {
+    flex-direction: column;
+  }
+
+  .projectBox {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .projectTitle {
+    font-size: 20px; /* Slightly reduced font size for mobile */
+  }
+
+  .projectDescription {
+    font-size: 14px; /* Slightly reduced font size for mobile */
+  }
+
+  .skillItem {
+    font-size: 12px; /* Slightly reduced font size for mobile */
+    padding: 3px 8px;
+  }
+
+  .projectLink {
+    font-size: 14px; /* Slightly reduced font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .projectsSection {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}

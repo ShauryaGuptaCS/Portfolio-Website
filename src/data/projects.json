@@ -1,0 +1,27 @@
+[
+  {
+    "title": " Full-Stack E-Commerce Application",
+    "imageSrc": "projects/project.png",
+    "description": "I developed a full-stack e-commerce application using React.js, Node.js, and MongoDB, featuring an admin panel that allows seamless product management including addition and deletion of items. The platform offers users a smooth experience for browsing, buying, and selling products. I ensured the application was responsive and secure, and collaborated with the team to optimize its performance.",
+    "skills": [
+      "React",
+      "Node",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "MongoDB"
+    ],
+    "source": "https://github.com/ShauryaGuptaCS/E-comm-Website"
+  },
+  {
+    "title": "SpaceX Frontend Clone",
+    "imageSrc": "projects/project.png",
+    "description": "I utilized HTML, CSS, and JavaScript to create a responsive front-end for the SpaceX website. This involved designing and implementing user-friendly interfaces that adapt seamlessly to various devices and screen sizes, ensuring an optimal browsing experience for all users.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "link": "https://shauryaguptacs.github.io/SpaceX-Clone/index.html"
+  }
+]
